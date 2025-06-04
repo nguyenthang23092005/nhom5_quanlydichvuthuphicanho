@@ -972,7 +972,7 @@ public class ApartmentPanel extends javax.swing.JPanel {
                     break;
                 }
                 case "Trạng thái": {
-                    String status = JOptionPane.showInputDialog(this, "Nhập trạng thái (Đã ở/Chưa ở hoặc trạng thái khác):");
+                    String status = JOptionPane.showInputDialog(this, "Nhập trạng thái (Đã ở/Bỏ trống):");
                     if (status != null && !status.trim().isEmpty()) {
                         results = controller.findByStatus(status.trim());
                     }

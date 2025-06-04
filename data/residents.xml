@@ -240,16 +240,4 @@
         <phoneNumber>0830123456</phoneNumber>
         <apartmentID>CH020</apartmentID>
     </resident>
-    <resident>
-        <cccd>012345678346</cccd>
-        <name>Nguyễn Anh Dũng</name>
-        <birthday>02/06/2003</birthday>
-        <address></address>
-        <IDFamily>12021</IDFamily>
-        <sex>Nam</sex>
-        <role></role>
-        <birthPlace>Hưng Yên</birthPlace>
-        <phoneNumber>0128365736</phoneNumber>
-        <apartmentID>CH021</apartmentID>
-    </resident>
 </residents>
