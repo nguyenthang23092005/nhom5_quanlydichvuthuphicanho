@@ -42,7 +42,7 @@ public class ListInvoicePanel extends javax.swing.JPanel {
     private boolean isUserSelectingCombo = true;
     public ListInvoicePanel(String username) {
         initComponents();
-        loggedInUsername = username;
+        this.loggedInUsername = username;
         controller = new InvoiceController();
         apartmentController = new ApartmentController();
         serviceController = new ServiceController();

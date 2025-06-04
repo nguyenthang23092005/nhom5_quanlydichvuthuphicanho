@@ -9,7 +9,7 @@ public class PaymentPanel extends javax.swing.JPanel {
     private String loggedInUsername;
     public PaymentPanel(String username) {
         initComponents();
-        loggedInUsername = username;
+        this.loggedInUsername = username;
     }
 
     /**

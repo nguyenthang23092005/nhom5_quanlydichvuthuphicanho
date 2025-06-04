@@ -35,8 +35,7 @@ public class StatisticalPanel extends javax.swing.JPanel {
     private String loggedInUsername;
     public StatisticalPanel(String username) {
         initComponents();
-        loggedInUsername = username;
-        // Khởi tạo controller chính
+        this.loggedInUsername = username;
         controller = new DashboardController();
 
         // Khởi tạo và cấu hình biểu đồ (chartPanel là vùng vẽ biểu đồ chính)

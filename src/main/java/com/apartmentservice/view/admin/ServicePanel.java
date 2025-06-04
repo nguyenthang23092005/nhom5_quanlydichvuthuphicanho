@@ -20,7 +20,7 @@ public class ServicePanel extends javax.swing.JPanel {
     private String loggedInUsername;
     public ServicePanel(String username) {
         initComponents();
-        loggedInUsername = username;
+        this.loggedInUsername = username;
         controller = new ServiceController();
         tableModel = (DefaultTableModel) DanhSachDichVu.getModel();
         DanhSachDichVu.getSelectionModel().addListSelectionListener(e -> {

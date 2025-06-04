@@ -30,7 +30,7 @@ public class ResidentPanel extends javax.swing.JPanel {
      */
     public ResidentPanel(String username) {
         initComponents();
-        loggedInUsername = username;
+        this.loggedInUsername = username;
         controller = new ResidentController();
         tableModel = (DefaultTableModel) DanhSachCuDan.getModel();
         try {

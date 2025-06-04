@@ -17,7 +17,7 @@ public class BuildingPanel extends javax.swing.JPanel {
     private String loggedInUsername;
     public BuildingPanel(String username) {
         initComponents();
-        loggedInUsername = username;
+        this.loggedInUsername = username;
         controller = new BuildingController();
         tableModel = (DefaultTableModel) ThongTinToaNha.getModel();
         loadTable();
