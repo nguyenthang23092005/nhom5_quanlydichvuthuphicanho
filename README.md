@@ -9,7 +9,7 @@ Thành viên nhóm bao gồm:
 1. Tải source code về tại:
 https://github.com/nguyenthang23092005/nhom5_quanlydichvuthuphicanho.git
 2. Giải nén và mở source code bằng Apache Netbeans.
-3. Chạy source code bằng cách chọn vào file `Main.java` + `Shift + F6`. Hoặc sử dụng ứng dụng đã được đóng gói `\target\ResiTrack.jar`.
+3. Chạy source code bằng cách chọn vào file `Main.java` + `Shift + F6`. Hoặc sử dụng ứng dụng đã được đóng gói `./target/ResiTrack.jar`.
 ## Tài khoản
 - **Tài khoản**: `ngthang`
 - **Mật khẩu**: `ngthang`
