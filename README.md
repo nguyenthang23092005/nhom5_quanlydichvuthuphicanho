@@ -20,12 +20,12 @@ https://github.com/nguyenthang23092005/nhom5_quanlydichvuthuphicanho.git
 ## Đăng kí tài khoản
 Cần điền thêm email có định dạng đúng(có đuôi *@gmail.com*).
 ## Giao diện
-![Đây là giao diện Đăng Nhập](./img/Đăng Nhập.png)
-![Đây là giao diện Đăng Kí](./img/Đăng Nhập.png)
-![Đây là giao diện Quản Lý Căn Hộ](./img/Đăng Nhập.png)
-![Đây là giao diện Quản Lý Hóa Đơn](./img/Đăng Nhập.png)
-![Đây là giao diện Danh Sách Cư Dân](./img/Đăng Nhập.png)
-![Đây là giao diện Quản Lý Dịch Vụ](./img/Đăng Nhập.png)
-![Đây là giao diện Thông Tin Tòa Nhà](./img/Đăng Nhập.png)
+- ![Đây là giao diện Đăng Nhập](./img/Đăng Nhập.png)
+- ![Đây là giao diện Đăng Kí](./img/Đăng Nhập.png)
+- ![Đây là giao diện Quản Lý Căn Hộ](./img/Đăng Nhập.png)
+- ![Đây là giao diện Quản Lý Hóa Đơn](./img/Đăng Nhập.png)
+- ![Đây là giao diện Danh Sách Cư Dân](./img/Đăng Nhập.png)
+- ![Đây là giao diện Quản Lý Dịch Vụ](./img/Đăng Nhập.png)
+- ![Đây là giao diện Thông Tin Tòa Nhà](./img/Đăng Nhập.png)
 ![Đây là giao diện Hình Thức Thanh Toán](./img/Đăng Nhập.png)
 ![Đây là giao diện Thống Kê](./img/Đăng Nhập.png)
