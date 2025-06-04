@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<residents>
+    <resident>
+        <cccd>001203456789</cccd>
+        <name>Nguyễn Văn Thăng</name>
+        <birthday>10/06/2024</birthday>
+        <address></address>
+        <IDFamily>12001</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Hải Dương</birthPlace>
+        <phoneNumber>0462725462</phoneNumber>
+        <apartmentID>CH001</apartmentID>
+    </resident>
+    <resident>
+        <cccd>001234567890</cccd>
+        <name>Phạm Văn Sự</name>
+        <birthday>10/06/2002</birthday>
+        <address></address>
+        <IDFamily>12002</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Hải Phòng</birthPlace>
+        <phoneNumber>0912345678</phoneNumber>
+        <apartmentID>CH002</apartmentID>
+    </resident>
+    <resident>
+        <cccd>002134567891</cccd>
+        <name>Trịnh Văn Quyết</name>
+        <birthday>15/07/1998</birthday>
+        <address></address>
+        <IDFamily>12003</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Hà Nội</birthPlace>
+        <phoneNumber>0923456789</phoneNumber>
+        <apartmentID>CH003</apartmentID>
+    </resident>
+    <resident>
+        <cccd>003245678912</cccd>
+        <name>Nguyễn Phương Hằng</name>
+        <birthday>08/08/1989</birthday>
+        <address></address>
+        <IDFamily>12004</IDFamily>
+        <sex>Nữ</sex>
+        <role></role>
+        <birthPlace>Cà Mau</birthPlace>
+        <phoneNumber>0934567890</phoneNumber>
+        <apartmentID>CH004</apartmentID>
+    </resident>
+    <resident>
+        <cccd>004356789123</cccd>
+        <name>Cao Văn Trường</name>
+        <birthday>18/08/1999</birthday>
+        <address></address>
+        <IDFamily>12005</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Lạng Sơn</birthPlace>
+        <phoneNumber>0945678901</phoneNumber>
+        <apartmentID>CH005</apartmentID>
+    </resident>
+    <resident>
+        <cccd>005467891234</cccd>
+        <name>Nguyễn Văn Sơn</name>
+        <birthday>12/09/2001</birthday>
+        <address></address>
+        <IDFamily>12006</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Nam Định</birthPlace>
+        <phoneNumber>0966789012</phoneNumber>
+        <apartmentID>CH006</apartmentID>
+    </resident>
+    <resident>
+        <cccd>006578912345</cccd>
+        <name>Lê Minh Quân</name>
+        <birthday>15/09/1998</birthday>
+        <address></address>
+        <IDFamily>12007</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Thanh Hóa</birthPlace>
+        <phoneNumber>0977890123</phoneNumber>
+        <apartmentID>CH007</apartmentID>
+    </resident>
+    <resident>
+        <cccd>007689123456</cccd>
+        <name>Đặng Quốc Huy</name>
+        <birthday>16/10/1974</birthday>
+        <address></address>
+        <IDFamily>12008</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Nghệ An</birthPlace>
+        <phoneNumber>0988901234</phoneNumber>
+        <apartmentID>CH008</apartmentID>
+    </resident>
+    <resident>
+        <cccd>008791234567</cccd>
+        <name>Hoàng Thị Ngọc Bích</name>
+        <birthday>14/06/1988</birthday>
+        <address></address>
+        <IDFamily>12009</IDFamily>
+        <sex>Nữ</sex>
+        <role></role>
+        <birthPlace>Cà Mau</birthPlace>
+        <phoneNumber>0999012345</phoneNumber>
+        <apartmentID>CH009</apartmentID>
+    </resident>
+    <resident>
+        <cccd>009812345678</cccd>
+        <name>Dương Thị Hồng Nhung</name>
+        <birthday>15/08/2001</birthday>
+        <address></address>
+        <IDFamily>12010</IDFamily>
+        <sex>Nữ</sex>
+        <role></role>
+        <birthPlace>Hưng Yên</birthPlace>
+        <phoneNumber>0320123456</phoneNumber>
+        <apartmentID>CH010</apartmentID>
+    </resident>
+    <resident>
+        <cccd>010923456789</cccd>
+        <name>Lưu Chí Vĩ</name>
+        <birthday>12/10/1988</birthday>
+        <address></address>
+        <IDFamily>12011</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Đà Nẵng</birthPlace>
+        <phoneNumber>0331234567</phoneNumber>
+        <apartmentID>CH011</apartmentID>
+    </resident>
+    <resident>
+        <cccd>011034567890</cccd>
+        <name>Tạ Ngọc Phùng</name>
+        <birthday>07/07/1999</birthday>
+        <address></address>
+        <IDFamily>12012</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Kiên Giang</birthPlace>
+        <phoneNumber>0342345678</phoneNumber>
+        <apartmentID>CH012</apartmentID>
+    </resident>
+    <resident>
+        <cccd>012145678901</cccd>
+        <name>Lưu Quang Vũ</name>
+        <birthday>12/06/1979</birthday>
+        <address></address>
+        <IDFamily>12013</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Nam Định</birthPlace>
+        <phoneNumber>0353456789</phoneNumber>
+        <apartmentID>CH013</apartmentID>
+    </resident>
+    <resident>
+        <cccd>013256789012</cccd>
+        <name>Nguyễn Thị Cẩm Tú</name>
+        <birthday>12/08/2004</birthday>
+        <address></address>
+        <IDFamily>12014</IDFamily>
+        <sex>Nữ</sex>
+        <role></role>
+        <birthPlace>Thái Bình</birthPlace>
+        <phoneNumber>0364567890</phoneNumber>
+        <apartmentID>CH014</apartmentID>
+    </resident>
+    <resident>
+        <cccd>014367890123</cccd>
+        <name>Nguyễn Thị Trúc Linh</name>
+        <birthday>01/06/2025</birthday>
+        <address></address>
+        <IDFamily>12015</IDFamily>
+        <sex>Nữ</sex>
+        <role></role>
+        <birthPlace>Đà Nẵng</birthPlace>
+        <phoneNumber>0123455678</phoneNumber>
+        <apartmentID>CH015</apartmentID>
+    </resident>
+    <resident>
+        <cccd>015478901234</cccd>
+        <name>Hồ Thanh Bình</name>
+        <birthday>24/06/1975</birthday>
+        <address></address>
+        <IDFamily>12016</IDFamily>
+        <sex>Nữ</sex>
+        <role></role>
+        <birthPlace>Thái Nguyên</birthPlace>
+        <phoneNumber>0386789012</phoneNumber>
+        <apartmentID>CH016</apartmentID>
+    </resident>
+    <resident>
+        <cccd>016589012345</cccd>
+        <name>Trần Xuân Thanh</name>
+        <birthday>15/09/2004</birthday>
+        <address></address>
+        <IDFamily>12017</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Thanh Hóa</birthPlace>
+        <phoneNumber>0397890123</phoneNumber>
+        <apartmentID>CH017</apartmentID>
+    </resident>
+    <resident>
+        <cccd>017690123456</cccd>
+        <name>Lý Thanh Cao</name>
+        <birthday>17/08/1989</birthday>
+        <address></address>
+        <IDFamily>12018</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Hải Dương</birthPlace>
+        <phoneNumber>0708901234</phoneNumber>
+        <apartmentID>CH018</apartmentID>
+    </resident>
+    <resident>
+        <cccd>018701234567</cccd>
+        <name>Trương Văn Phú</name>
+        <birthday>15/08/1979</birthday>
+        <address></address>
+        <IDFamily>12019</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Quảng Ninh</birthPlace>
+        <phoneNumber>0799012345</phoneNumber>
+        <apartmentID>CH019</apartmentID>
+    </resident>
+    <resident>
+        <cccd>019812345678</cccd>
+        <name>Phùng Thanh Độ</name>
+        <birthday>15/06/1994</birthday>
+        <address></address>
+        <IDFamily>12020</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Cao Bằng</birthPlace>
+        <phoneNumber>0830123456</phoneNumber>
+        <apartmentID>CH020</apartmentID>
+    </resident>
+    <resident>
+        <cccd>012345678346</cccd>
+        <name>Nguyễn Anh Dũng</name>
+        <birthday>02/06/2003</birthday>
+        <address></address>
+        <IDFamily>12021</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Hưng Yên</birthPlace>
+        <phoneNumber>0128365736</phoneNumber>
+        <apartmentID>CH021</apartmentID>
+    </resident>
+</residents>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<buildings>
+    <building>
+        <name>A</name>
+        <address>123 Trần Phú</address>
+        <floorCount>5</floorCount>
+        <apartmentCount>20</apartmentCount>
+        <managerName>Nguyễn Quản Lý</managerName>
+        <status>Đang sử dụng</status>
+    </building>
+    <building>
+        <name>B</name>
+        <address>456 Lý Thường Kiệt</address>
+        <floorCount>7</floorCount>
+        <apartmentCount>28</apartmentCount>
+        <managerName>Trần Điều Hành</managerName>
+        <status>Đang sửa chữa</status>
+    </building>
+    <building>
+        <name>C</name>
+        <address>789 Nguyễn Huệ</address>
+        <floorCount>6</floorCount>
+        <apartmentCount>24</apartmentCount>
+        <managerName>Phạm Quản Trị</managerName>
+        <status>Đang sử dụng</status>
+    </building>
+    <building>
+        <name>D</name>
+        <address>101 Hùng Vương</address>
+        <floorCount>8</floorCount>
+        <apartmentCount>32</apartmentCount>
+        <managerName>Lê Giám Sát</managerName>
+        <status>Tạm ngưng</status>
+    </building>
+    <building>
+        <name>E</name>
+        <address>202 Hai Bà Trưng</address>
+        <floorCount>4</floorCount>
+        <apartmentCount>16</apartmentCount>
+        <managerName>Đỗ Điều Phối</managerName>
+        <status>Đang sử dụng</status>
+    </building>
+</buildings>
