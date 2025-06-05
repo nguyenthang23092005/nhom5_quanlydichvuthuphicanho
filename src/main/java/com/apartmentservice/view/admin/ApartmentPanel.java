@@ -6,11 +6,15 @@ package com.apartmentservice.view.admin;
 import com.apartmentservice.controller.ApartmentController;
 import com.apartmentservice.model.Apartment;
 import com.apartmentservice.model.BuildingSummary;
+import com.apartmentservice.model.Invoice;
+import com.apartmentservice.model.Resident;
 import com.apartmentservice.model.Service;
 import com.apartmentservice.utils.ReloadablePanel;
 import com.apartmentservice.utils.Validator;
 import com.apartmentservice.utils.XMLUtil;
 import com.apartmentservice.wrapper.BuildingXML;
+import com.apartmentservice.wrapper.InvoiceXML;
+import com.apartmentservice.wrapper.ResidentXML;
 import com.apartmentservice.wrapper.ServiceXML;
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -793,7 +797,6 @@ public class ApartmentPanel extends javax.swing.JPanel implements ReloadablePane
             return;
         }
         Apartment existing = foundList.get(0);
-
         // Lấy dữ liệu từ form
         String owner = txtChuHo.getText().trim();
         String acreageStr = txtDienTich.getText().trim();
@@ -804,7 +807,6 @@ public class ApartmentPanel extends javax.swing.JPanel implements ReloadablePane
         java.util.Date moveInDateUtil = txtNgayVao.getDate();
         List<String> selectedServices = listDichVu.getSelectedValuesList();
         String dichVuStr = String.join(", ", selectedServices);
-
         // Kiểm tra dữ liệu
         if (owner.isEmpty() || acreageStr.isEmpty() || memberStr.isEmpty() ||
             building == null || floorStr == null || moveInDateUtil == null || status.isEmpty()) {
@@ -824,9 +826,39 @@ public class ApartmentPanel extends javax.swing.JPanel implements ReloadablePane
             double acreage = Double.parseDouble(acreageStr);
             int members = Integer.parseInt(memberStr);
             String moveInDate = sdf.format(moveInDateUtil);
-
             // Gọi controller cập nhật (sử dụng updateApartment đã có)
             controller.updateApartment(id.trim(), building, floor, acreage, status, owner, members, dichVuStr, moveInDate);
+
+            // Cập nhật tên khách hàng trong residents.xml
+            File residentsFile = new File("data/residents.xml");
+            if (residentsFile.exists()) {
+                ResidentXML residentsWrapper = XMLUtil.readFromXML(residentsFile, ResidentXML.class);
+                if (residentsWrapper != null) {
+                    List<Resident> residentsList = residentsWrapper.getResidents();
+                    for (Resident resident : residentsList) {
+                        if (resident.getApartmentID().equals(id)) {
+                            resident.setName(owner);  // Cập nhật tên chủ sở hữu
+                        }
+                    }
+                    XMLUtil.writeToXML(residentsFile, residentsWrapper, ResidentXML.class);
+                }
+            }
+
+            // Cập nhật tên khách hàng trong invoices.xml
+            File invoicesFile = new File("data/invoices.xml");
+            if (invoicesFile.exists()) {
+                InvoiceXML invoiceWrapper = XMLUtil.readFromXML(invoicesFile, InvoiceXML.class);
+                if (invoiceWrapper != null) {
+                    List<Invoice> invoiceList = invoiceWrapper.getInvoices();
+                    for (Invoice invoice : invoiceList) {
+                        if (invoice.getApartmentID().equals(id)) {
+                            invoice.setCustomerName(owner);  // Cập nhật tên khách hàng
+                        }
+                    }
+                    XMLUtil.writeToXML(invoicesFile, invoiceWrapper, InvoiceXML.class);
+                }
+            }
+
             JOptionPane.showMessageDialog(this, "Cập nhật thành công căn hộ có mã: " + id);
             loadTable();
             clearForm();

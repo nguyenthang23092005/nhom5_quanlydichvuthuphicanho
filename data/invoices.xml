@@ -3,7 +3,7 @@
     <invoice>
         <invoiceID>HD001</invoiceID>
         <apartmentID>CH001</apartmentID>
-        <customerName>Nguyễn Văn Thăng</customerName>
+        <customerName>Lê Quang Trọng</customerName>
         <cashierName>Tuyền</cashierName>
         <paid>Đã thanh toán</paid>
         <invoiceDate>01/06/2025</invoiceDate>
@@ -97,7 +97,7 @@
     <invoice>
         <invoiceID>HD002</invoiceID>
         <apartmentID>CH002</apartmentID>
-        <customerName>Phạm Văn Sự</customerName>
+        <customerName>Phạm Quang</customerName>
         <cashierName>Thăng</cashierName>
         <paid>Đã thanh toán</paid>
         <invoiceDate>02/06/2025</invoiceDate>
@@ -198,7 +198,7 @@
     <invoice>
         <invoiceID>HD003</invoiceID>
         <apartmentID>CH003</apartmentID>
-        <customerName>Trịnh Văn Quyết</customerName>
+        <customerName>Trần Văn Quyết</customerName>
         <cashierName>Thăng</cashierName>
         <paid>Chưa thanh toán</paid>
         <invoiceDate>02/02/2025</invoiceDate>
@@ -1126,6 +1126,252 @@
                 <unitPrice>100000.0</unitPrice>
                 <unit>Tháng</unit>
                 <note>Thuê bảo vệ an ninh</note>
+            </serviceFee>
+        </serviceFees>
+    </invoice>
+    <invoice>
+        <invoiceID>HD021</invoiceID>
+        <apartmentID>CH033</apartmentID>
+        <customerName>Lê Min Ho</customerName>
+        <cashierName>Thăng</cashierName>
+        <paid>Đã thanh toán</paid>
+        <invoiceDate>16/06/2025</invoiceDate>
+        <serviceFees>
+            <serviceFee>
+                <serviceID>DV001</serviceID>
+                <serviceName>Phí quản lý</serviceName>
+                <unitPrice>150000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Quản lý chung cư</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV003</serviceID>
+                <serviceName>Hầm xe máy</serviceName>
+                <unitPrice>150000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Gửi xe máy trong hầm</note>
+            </serviceFee>
+        </serviceFees>
+    </invoice>
+    <invoice>
+        <invoiceID>HD022</invoiceID>
+        <apartmentID>CH001</apartmentID>
+        <customerName>Lê Quang Trọng</customerName>
+        <cashierName>nbjb</cashierName>
+        <paid>Đã thanh toán</paid>
+        <invoiceDate>01/06/2025</invoiceDate>
+        <serviceFees>
+            <serviceFee>
+                <serviceID>DV001</serviceID>
+                <serviceName>Phí quản lý</serviceName>
+                <unitPrice>150000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Quản lý chung cư</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV003</serviceID>
+                <serviceName>Hầm xe máy</serviceName>
+                <unitPrice>150000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Gửi xe máy trong hầm</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV004</serviceID>
+                <serviceName>Hầm ô tô</serviceName>
+                <unitPrice>1200000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Gửi xe ô tô trong hầm</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV005</serviceID>
+                <serviceName>Nước sinh hoạt</serviceName>
+                <unitPrice>200000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Nước sinh hoạt cho công dân</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV006</serviceID>
+                <serviceName>Tiền điện</serviceName>
+                <unitPrice>700000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Điện dân dụng cho gia đình</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV007</serviceID>
+                <serviceName>Nước tinh khiết</serviceName>
+                <unitPrice>100000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Nước uống cho hộ (Tùy chọn)</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV008</serviceID>
+                <serviceName>Thu gom và xử lý rác</serviceName>
+                <unitPrice>100000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Thu gom và xử lý rác thải sinh hoạt</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV009</serviceID>
+                <serviceName>Phí bảo trì</serviceName>
+                <unitPrice>400000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Bảo trì cho chung cư</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV010</serviceID>
+                <serviceName>Internet cao cấp</serviceName>
+                <unitPrice>450000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Internet tốc độ cao</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV012</serviceID>
+                <serviceName>Gas</serviceName>
+                <unitPrice>50000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Tiền gas trong gia đình</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV013</serviceID>
+                <serviceName>Điều hòa</serviceName>
+                <unitPrice>200000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Điều hòa trong gia đình</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV014</serviceID>
+                <serviceName>Bảo Vệ</serviceName>
+                <unitPrice>100000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>An ninh</note>
+            </serviceFee>
+        </serviceFees>
+    </invoice>
+    <invoice>
+        <invoiceID>HD023</invoiceID>
+        <apartmentID>CH001</apartmentID>
+        <customerName>Lê Quang Trọng</customerName>
+        <cashierName>ểdsf</cashierName>
+        <paid>Đã thanh toán</paid>
+        <invoiceDate>03/06/2025</invoiceDate>
+        <serviceFees>
+            <serviceFee>
+                <serviceID>DV001</serviceID>
+                <serviceName>Phí quản lý</serviceName>
+                <unitPrice>150000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Quản lý chung cư</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV003</serviceID>
+                <serviceName>Hầm xe máy</serviceName>
+                <unitPrice>150000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Gửi xe máy trong hầm</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV004</serviceID>
+                <serviceName>Hầm ô tô</serviceName>
+                <unitPrice>1200000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Gửi xe ô tô trong hầm</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV005</serviceID>
+                <serviceName>Nước sinh hoạt</serviceName>
+                <unitPrice>200000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Nước sinh hoạt cho công dân</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV006</serviceID>
+                <serviceName>Tiền điện</serviceName>
+                <unitPrice>700000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Điện dân dụng cho gia đình</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV007</serviceID>
+                <serviceName>Nước tinh khiết</serviceName>
+                <unitPrice>100000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Nước uống cho hộ (Tùy chọn)</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV008</serviceID>
+                <serviceName>Thu gom và xử lý rác</serviceName>
+                <unitPrice>100000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Thu gom và xử lý rác thải sinh hoạt</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV009</serviceID>
+                <serviceName>Phí bảo trì</serviceName>
+                <unitPrice>400000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Bảo trì cho chung cư</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV010</serviceID>
+                <serviceName>Internet cao cấp</serviceName>
+                <unitPrice>450000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Internet tốc độ cao</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV012</serviceID>
+                <serviceName>Gas</serviceName>
+                <unitPrice>50000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Tiền gas trong gia đình</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV013</serviceID>
+                <serviceName>Điều hòa</serviceName>
+                <unitPrice>200000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Điều hòa trong gia đình</note>
+            </serviceFee>
+            <serviceFee>
+                <serviceID>DV014</serviceID>
+                <serviceName>Bảo Vệ</serviceName>
+                <unitPrice>100000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>An ninh</note>
+            </serviceFee>
+        </serviceFees>
+    </invoice>
+    <invoice>
+        <invoiceID>HD024</invoiceID>
+        <apartmentID>CH036</apartmentID>
+        <customerName>dskjfhsjd</customerName>
+        <cashierName>ưer</cashierName>
+        <paid>Đã thanh toán</paid>
+        <invoiceDate>01/06/2025</invoiceDate>
+        <serviceFees>
+            <serviceFee>
+                <serviceID>DV001</serviceID>
+                <serviceName>Quản Lý</serviceName>
+                <unitPrice>150000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Quản lý chung cư</note>
+            </serviceFee>
+        </serviceFees>
+    </invoice>
+    <invoice>
+        <invoiceID>HD025</invoiceID>
+        <apartmentID>CH036</apartmentID>
+        <customerName>dskjfhsjd</customerName>
+        <cashierName>ửeter</cashierName>
+        <paid>Đã thanh toán</paid>
+        <invoiceDate>01/06/2025</invoiceDate>
+        <serviceFees>
+            <serviceFee>
+                <serviceID>DV001</serviceID>
+                <serviceName>Quản Lý</serviceName>
+                <unitPrice>150000.0</unitPrice>
+                <unit>Tháng</unit>
+                <note>Quản lý chung cư</note>
             </serviceFee>
         </serviceFees>
     </invoice>

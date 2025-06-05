@@ -3,12 +3,12 @@
     <apartment>
         <apartmentID>CH001</apartmentID>
         <building>B</building>
-        <floor>1</floor>
+        <floor>2</floor>
         <acreage>50.0</acreage>
         <status>Đã ở</status>
-        <ownerName>Nguyễn Văn Thăng</ownerName>
+        <ownerName>Lê Quang Trọng</ownerName>
         <memberNumber>3</memberNumber>
-        <dichVu>Phí quản lý, Hầm xe máy, Hầm ô tô, Nước sinh hoạt, Tiền điện, Nước tinh khiết, Thu gom và xử lý rác, Phí bảo trì, Internet cao cấp, Gas, Điều hòa, Bảo vệ</dichVu>
+        <dichVu>Nước sinh hoạt, Tiền điện, Nước tinh khiết, Thu gom và xử lý rác, Phí bảo trì, Internet cao cấp, Gas, Điều hòa, Bảo Vệ</dichVu>
         <moveInDate>03/06/2024</moveInDate>
     </apartment>
     <apartment>
@@ -17,9 +17,9 @@
         <floor>3</floor>
         <acreage>40.0</acreage>
         <status>Đã ở</status>
-        <ownerName>Phạm Văn Sự</ownerName>
+        <ownerName>Phạm Quang</ownerName>
         <memberNumber>4</memberNumber>
-        <dichVu>Phí quản lý, Thang máy, Hầm xe máy, Hầm ô tô, Nước sinh hoạt, Tiền điện, Nước tinh khiết, Thu gom và xử lý rác, Phí bảo trì, Internet cao cấp, Gas, Điều hòa, Bảo vệ</dichVu>
+        <dichVu>Thang máy, Hầm xe máy, Hầm ô tô, Nước sinh hoạt, Tiền điện, Nước tinh khiết, Thu gom và xử lý rác, Phí bảo trì, Internet cao cấp, Gas, Điều hòa, Bảo Vệ</dichVu>
         <moveInDate>07/06/2023</moveInDate>
     </apartment>
     <apartment>
@@ -28,9 +28,9 @@
         <floor>6</floor>
         <acreage>45.0</acreage>
         <status>Đã ở</status>
-        <ownerName>Trịnh Văn Quyết</ownerName>
+        <ownerName>Trần Văn Quyết</ownerName>
         <memberNumber>4</memberNumber>
-        <dichVu>Phí quản lý, Thang máy, Hầm ô tô, Nước sinh hoạt, Tiền điện, Nước tinh khiết, Thu gom và xử lý rác, Phí bảo trì, Internet cao cấp, Gas, Điều hòa, Bảo vệ</dichVu>
+        <dichVu>Thang máy, Nước sinh hoạt, Tiền điện, Nước tinh khiết, Thu gom và xử lý rác, Phí bảo trì, Internet cao cấp, Gas, Điều hòa, Bảo Vệ</dichVu>
         <moveInDate>29/06/2022</moveInDate>
     </apartment>
     <apartment>
@@ -362,5 +362,38 @@
         <memberNumber>5</memberNumber>
         <dichVu>Phí quản lý, Hầm xe máy</dichVu>
         <moveInDate>04/05/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH034</apartmentID>
+        <building>A</building>
+        <floor>1</floor>
+        <acreage>20.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Le Jong Suk</ownerName>
+        <memberNumber>5</memberNumber>
+        <dichVu>Phí quản lý, Hầm xe máy</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH035</apartmentID>
+        <building>A</building>
+        <floor>1</floor>
+        <acreage>43.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>fdgd</ownerName>
+        <memberNumber>3</memberNumber>
+        <dichVu>Quản Lý, Hầm xe máy</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH036</apartmentID>
+        <building>A</building>
+        <floor>1</floor>
+        <acreage>34.0</acreage>
+        <status>Bỏ trống</status>
+        <ownerName>dskjfhsjd</ownerName>
+        <memberNumber>3</memberNumber>
+        <dichVu>Quản Lý</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
     </apartment>
 </apartments>

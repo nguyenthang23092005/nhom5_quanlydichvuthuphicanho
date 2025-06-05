@@ -1131,6 +1131,7 @@ public class ResidentPanel extends javax.swing.JPanel implements ReloadablePanel
 
     @Override
     public void reload() {
+        controller = new ResidentController();
         try {
             loadCanHo(); 
         } catch (Exception e) {

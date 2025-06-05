@@ -2,7 +2,7 @@
 <services>
     <service>
         <serviceID>DV001</serviceID>
-        <serviceName>Phí quản lý</serviceName>
+        <serviceName>Quản Lý</serviceName>
         <unitPrice>150000.0</unitPrice>
         <unit>Tháng</unit>
         <note>Quản lý chung cư</note>
@@ -16,14 +16,14 @@
     </service>
     <service>
         <serviceID>DV003</serviceID>
-        <serviceName>Hầm xe máy</serviceName>
+        <serviceName>Trông xe</serviceName>
         <unitPrice>150000.0</unitPrice>
         <unit>Tháng</unit>
         <note>Gửi xe máy trong hầm</note>
     </service>
     <service>
         <serviceID>DV004</serviceID>
-        <serviceName>Hầm ô tô</serviceName>
+        <serviceName>ô tô</serviceName>
         <unitPrice>1200000.0</unitPrice>
         <unit>Tháng</unit>
         <note>Gửi xe ô tô trong hầm</note>

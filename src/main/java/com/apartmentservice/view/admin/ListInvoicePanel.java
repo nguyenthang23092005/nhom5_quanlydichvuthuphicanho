@@ -1213,6 +1213,9 @@ public class ListInvoicePanel extends javax.swing.JPanel implements ReloadablePa
 
     @Override
     public void reload() {
+        controller = new InvoiceController();
+        apartmentController = new ApartmentController();
+        serviceController = new ServiceController();
         tableModel = (DefaultTableModel) DanhSachHoaDonThanhToan.getModel();
         try {
             loadCanHo();

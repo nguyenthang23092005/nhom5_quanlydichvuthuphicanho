@@ -2,7 +2,7 @@
 <residents>
     <resident>
         <cccd>001203456789</cccd>
-        <name>Nguyễn Văn Thăng</name>
+        <name>Lê Quang Trọng</name>
         <birthday>10/06/2024</birthday>
         <address></address>
         <IDFamily>12001</IDFamily>
@@ -14,7 +14,7 @@
     </resident>
     <resident>
         <cccd>001234567890</cccd>
-        <name>Phạm Văn Sự</name>
+        <name>Phạm Quang</name>
         <birthday>10/06/2002</birthday>
         <address></address>
         <IDFamily>12002</IDFamily>
@@ -26,7 +26,7 @@
     </resident>
     <resident>
         <cccd>002134567891</cccd>
-        <name>Trịnh Văn Quyết</name>
+        <name>Trần Văn Quyết</name>
         <birthday>15/07/1998</birthday>
         <address></address>
         <IDFamily>12003</IDFamily>
@@ -239,5 +239,29 @@
         <birthPlace>Cao Bằng</birthPlace>
         <phoneNumber>0830123456</phoneNumber>
         <apartmentID>CH020</apartmentID>
+    </resident>
+    <resident>
+        <cccd>002034343434</cccd>
+        <name>Le Jong Suk</name>
+        <birthday>06/06/2006</birthday>
+        <address></address>
+        <IDFamily>13222</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>Quảng Ninh</birthPlace>
+        <phoneNumber>0343423232</phoneNumber>
+        <apartmentID>CH034</apartmentID>
+    </resident>
+    <resident>
+        <cccd>023324324243</cccd>
+        <name>dskjfhsjd</name>
+        <birthday>01/06/2025</birthday>
+        <address></address>
+        <IDFamily>34534</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>ểt</birthPlace>
+        <phoneNumber>0354534534</phoneNumber>
+        <apartmentID>CH036</apartmentID>
     </resident>
 </residents>
