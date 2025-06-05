@@ -264,4 +264,16 @@
         <phoneNumber>0354534534</phoneNumber>
         <apartmentID>CH036</apartmentID>
     </resident>
+    <resident>
+        <cccd>078888888885</cccd>
+        <name>hmyj</name>
+        <birthday>03/06/2025</birthday>
+        <address></address>
+        <IDFamily>346534</IDFamily>
+        <sex>Nam</sex>
+        <role></role>
+        <birthPlace>ytyt</birthPlace>
+        <phoneNumber>0348748735</phoneNumber>
+        <apartmentID>CH037</apartmentID>
+    </resident>
 </residents>

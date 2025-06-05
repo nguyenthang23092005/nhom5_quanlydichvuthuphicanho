@@ -396,4 +396,15 @@
         <dichVu>Quản Lý</dichVu>
         <moveInDate>01/06/2025</moveInDate>
     </apartment>
+    <apartment>
+        <apartmentID>CH037</apartmentID>
+        <building>A</building>
+        <floor>3</floor>
+        <acreage>6.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>hmyj</ownerName>
+        <memberNumber>6</memberNumber>
+        <dichVu>ô tô, Nước tinh khiết, Phí bảo trì</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
 </apartments>
