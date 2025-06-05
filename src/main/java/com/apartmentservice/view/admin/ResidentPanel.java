@@ -3,6 +3,7 @@ package com.apartmentservice.view.admin;
 import com.apartmentservice.controller.ResidentController;
 import com.apartmentservice.model.Apartment;
 import com.apartmentservice.model.Resident;
+import com.apartmentservice.utils.ReloadablePanel;
 import com.apartmentservice.utils.Validator;
 import com.apartmentservice.utils.XMLUtil;
 import com.apartmentservice.wrapper.ApartmentXML;
@@ -19,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Nguyen Van Thang
  */
-public class ResidentPanel extends javax.swing.JPanel {
+public class ResidentPanel extends javax.swing.JPanel implements ReloadablePanel{
     private ResidentController controller;
     private DefaultTableModel tableModel;
     private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -1127,4 +1128,101 @@ public class ResidentPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtSoHoKhau;
     private javax.swing.JTextField txtSĐT;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void reload() {
+        try {
+            loadCanHo(); 
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Lỗi khi load dữ liệu căn hộ:\n" + e.getMessage());
+        }
+        checkNam.addActionListener(e -> {
+            if (checkNam.isSelected()) checkNu.setSelected(false);
+        });
+        checkNu.addActionListener(e -> {
+            if (checkNu.isSelected()) checkNam.setSelected(false);
+        });
+        loadTable();
+        DanhSachCuDan.getSelectionModel().addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                int selectedRow = DanhSachCuDan.getSelectedRow();
+                if (selectedRow >= 0) {
+                    String name = (String) DanhSachCuDan.getValueAt(selectedRow, 1);
+                    String birthDateStr = (String) DanhSachCuDan.getValueAt(selectedRow, 2);
+                    String sex = (String) DanhSachCuDan.getValueAt(selectedRow, 3);
+                    String cccd = (String) DanhSachCuDan.getValueAt(selectedRow, 4);
+                    String phone = (String) DanhSachCuDan.getValueAt(selectedRow, 5);
+                    String apartmentID = (String) DanhSachCuDan.getValueAt(selectedRow, 6);
+                    String birthPlace = (String) DanhSachCuDan.getValueAt(selectedRow, 7);
+                    String familyID = (String) DanhSachCuDan.getValueAt(selectedRow, 8);
+
+                    isUserSelectingCombo = false; // Tạm tắt event khi set giá trị combo
+
+                    // Set comboHoVaTen
+                    boolean foundName = false;
+                    for (int i = 0; i < comboHoVaTen.getItemCount(); i++) {
+                        if (comboHoVaTen.getItemAt(i).equals(name)) {
+                            comboHoVaTen.setSelectedIndex(i);
+                            foundName = true;
+                            break;
+                        }
+                    }
+                    if (!foundName) {
+                        comboHoVaTen.addItem(name);
+                        comboHoVaTen.setSelectedItem(name);
+                    }
+
+                    // Set comboMaCanHo
+                    boolean foundApartment = false;
+                    for (int i = 0; i < comboMaCanHo.getItemCount(); i++) {
+                        if (comboMaCanHo.getItemAt(i).equals(apartmentID)) {
+                            comboMaCanHo.setSelectedIndex(i);
+                            foundApartment = true;
+                            break;
+                        }
+                    }
+                    if (!foundApartment) {
+                        comboMaCanHo.addItem(apartmentID);
+                        comboMaCanHo.setSelectedItem(apartmentID);
+                    }
+
+                    isUserSelectingCombo = true; // Bật lại event cho phép user thao tác
+
+                    // Các trường text và date khác
+                    txtCCCD.setText(cccd);
+                    txtSĐT.setText(phone);
+                    txtQueQuan.setText(birthPlace);
+                    txtSoHoKhau.setText(familyID);
+                    try {
+                        if (birthDateStr != null && !birthDateStr.equalsIgnoreCase("Không rõ")) {
+                            java.util.Date date = sdf.parse(birthDateStr);
+                            dateNgaySinh.setDate(date);
+                        } else {
+                            dateNgaySinh.setDate(null);
+                        }
+                    } catch (Exception ex) {
+                        dateNgaySinh.setDate(null);
+                    }
+                    if ("Nam".equalsIgnoreCase(sex)) {
+                        checkNam.setSelected(true);
+                        checkNu.setSelected(false);
+                    } else if ("Nữ".equalsIgnoreCase(sex)) {
+                        checkNam.setSelected(false);
+                        checkNu.setSelected(true);
+                    } else {
+                        checkNam.setSelected(false);
+                        checkNu.setSelected(false);
+                    }
+                }
+            }
+        });
+        DefaultTableCellRenderer leftRenderer = new DefaultTableCellRenderer();
+        leftRenderer.setHorizontalAlignment(SwingConstants.LEFT);
+
+        // Căn trái cho tất cả các cột trong bảng (trừ cột kiểu số nếu bạn muốn căn phải)
+        for (int i = 0; i < DanhSachCuDan.getColumnCount(); i++) {
+            DanhSachCuDan.getColumnModel().getColumn(i).setCellRenderer(leftRenderer);
+        }
+    }
 }

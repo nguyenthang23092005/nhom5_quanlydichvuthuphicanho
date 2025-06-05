@@ -38,6 +38,7 @@ public class ServiceController {
     }
 
     public boolean deleteService(String id) {
+        IDGenerator.getInstance().decreaseServiceID();
         return manager.delete(id);
     }
 

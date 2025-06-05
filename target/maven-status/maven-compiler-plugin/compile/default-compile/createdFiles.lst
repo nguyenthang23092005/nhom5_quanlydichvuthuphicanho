@@ -103,6 +103,7 @@ com\apartmentservice\manager\ServiceManager.class
 com\apartmentservice\view\admin\ApartmentPanel$7.class
 com\apartmentservice\view\admin\ResidentPanel$6.class
 com\apartmentservice\view\login\component\PanelCover.class
+com\apartmentservice\utils\ReloadablePanel.class
 com\apartmentservice\view\admin\ListInvoicePanel$6.class
 com\apartmentservice\wrapper\InvoiceXML.class
 com\apartmentservice\view\login\swing\MyPasswordField.class

@@ -269,27 +269,27 @@ public class InterfaceFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void butQuanLyCanHoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butQuanLyCanHoActionPerformed
-        PanelSwitcher.switchPanel(TongPanel, apartmentPanel);
+        PanelSwitcher.switchPanel(TongPanel, () -> apartmentPanel);
     }//GEN-LAST:event_butQuanLyCanHoActionPerformed
 
     private void butDanhSachCuDanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butDanhSachCuDanActionPerformed
-        PanelSwitcher.switchPanel(TongPanel, residentPanel);
+        PanelSwitcher.switchPanel(TongPanel, () -> residentPanel);
     }//GEN-LAST:event_butDanhSachCuDanActionPerformed
 
     private void butQuanLyHoaDonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butQuanLyHoaDonActionPerformed
-        PanelSwitcher.switchPanel(TongPanel, listInvoicePanel);
+        PanelSwitcher.switchPanel(TongPanel, () -> listInvoicePanel);
     }//GEN-LAST:event_butQuanLyHoaDonActionPerformed
 
     private void butQuanLyDichVuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butQuanLyDichVuActionPerformed
-        PanelSwitcher.switchPanel(TongPanel, servicePanel);
+        PanelSwitcher.switchPanel(TongPanel, () -> servicePanel);
     }//GEN-LAST:event_butQuanLyDichVuActionPerformed
 
     private void butThongTinToaNhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butThongTinToaNhaActionPerformed
-        PanelSwitcher.switchPanel(TongPanel, buildingPanel);
+        PanelSwitcher.switchPanel(TongPanel, () -> buildingPanel);
     }//GEN-LAST:event_butThongTinToaNhaActionPerformed
 
     private void butHinhThucThanhToanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butHinhThucThanhToanActionPerformed
-        PanelSwitcher.switchPanel(TongPanel, paymentPanel);
+        PanelSwitcher.switchPanel(TongPanel, () -> paymentPanel);
     }//GEN-LAST:event_butHinhThucThanhToanActionPerformed
 
     private void butDangXuatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butDangXuatActionPerformed
@@ -307,7 +307,7 @@ public class InterfaceFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_butDangXuatActionPerformed
 
     private void butThongKeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butThongKeActionPerformed
-        PanelSwitcher.switchPanel(TongPanel, statisticalPanel);
+        PanelSwitcher.switchPanel(TongPanel, () -> statisticalPanel);
     }//GEN-LAST:event_butThongKeActionPerformed
 
     /**

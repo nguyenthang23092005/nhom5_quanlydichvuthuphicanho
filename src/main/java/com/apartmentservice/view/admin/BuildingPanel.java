@@ -2,6 +2,7 @@ package com.apartmentservice.view.admin;
 
 import com.apartmentservice.controller.BuildingController;
 import com.apartmentservice.model.BuildingSummary;
+import com.apartmentservice.utils.ReloadablePanel;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.SwingConstants;
@@ -10,7 +11,7 @@ import javax.swing.table.DefaultTableCellRenderer;
  *
  * @author Nguyen Van Thang
  */
-public class BuildingPanel extends javax.swing.JPanel {
+public class BuildingPanel extends javax.swing.JPanel implements ReloadablePanel{
 
     private BuildingController controller;
     private DefaultTableModel tableModel;
@@ -330,4 +331,26 @@ public class BuildingPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void reload() {
+        controller = new BuildingController();
+        tableModel = (DefaultTableModel) ThongTinToaNha.getModel();
+        loadTable();
+
+        // Cài đặt độ rộng cột cho bảng
+        ThongTinToaNha.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
+        ThongTinToaNha.getColumnModel().getColumn(0).setPreferredWidth(50);
+        ThongTinToaNha.getColumnModel().getColumn(1).setPreferredWidth(100);
+        ThongTinToaNha.getColumnModel().getColumn(2).setPreferredWidth(200);
+        ThongTinToaNha.getColumnModel().getColumn(3).setPreferredWidth(80);
+        ThongTinToaNha.getColumnModel().getColumn(4).setPreferredWidth(90);
+        ThongTinToaNha.getColumnModel().getColumn(5).setPreferredWidth(150);
+        ThongTinToaNha.getColumnModel().getColumn(6).setPreferredWidth(120);
+        DefaultTableCellRenderer leftRenderer = new DefaultTableCellRenderer();
+        leftRenderer.setHorizontalAlignment(SwingConstants.LEFT);
+        for (int i = 0; i < ThongTinToaNha.getColumnCount(); i++) {
+            ThongTinToaNha.getColumnModel().getColumn(i).setCellRenderer(leftRenderer);
+        }
+    }
 }

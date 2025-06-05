@@ -7,6 +7,7 @@ import com.apartmentservice.manager.ServiceManager;
 import com.apartmentservice.model.Apartment;
 import com.apartmentservice.model.Invoice;
 import com.apartmentservice.model.Service;
+import com.apartmentservice.utils.ReloadablePanel;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.text.NumberFormat;
@@ -28,7 +29,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
  *
  * @author Nguyen Van Thang
  */
-public class StatisticalPanel extends javax.swing.JPanel {
+public class StatisticalPanel extends javax.swing.JPanel implements ReloadablePanel{
 
     private DashboardController controller;
     private JPanel chartPanel;
@@ -470,4 +471,22 @@ public class StatisticalPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtTongSoCanHo;
     private javax.swing.JTextField txtTongSoCuDan;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void reload() {
+        // Khởi tạo và cấu hình biểu đồ (chartPanel là vùng vẽ biểu đồ chính)
+        chartPanel = new JPanel();
+        chartPanel.setPreferredSize(new Dimension(800, 400));
+        chartPanel.setLayout(new BorderLayout());
+
+        // Gán vùng biểu đồ vào panel chứa (PanelBieuDo đã có trong giao diện)
+        PanelBieuDo.setLayout(new BorderLayout());
+        PanelBieuDo.add(chartPanel, BorderLayout.CENTER);
+
+        // Hiển thị thông tin tổng quan ban đầu (toàn bộ hệ thống)
+        hienThiThongTinTongQuan();
+
+        // Vẽ biểu đồ doanh thu theo dịch vụ cho tất cả các hóa đơn đã thanh toán
+        veBieuDoDoanhThu12ThangGanNhat();
+    }
 }

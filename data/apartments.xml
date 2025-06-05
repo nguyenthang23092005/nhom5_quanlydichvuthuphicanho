@@ -223,12 +223,144 @@
     <apartment>
         <apartmentID>CH021</apartmentID>
         <building>A</building>
+        <floor>2</floor>
+        <acreage>30.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Nguyễn Anh Tài</ownerName>
+        <memberNumber>4</memberNumber>
+        <dichVu>Phí bảo trì, Internet bình dân, Điều hòa</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH022</apartmentID>
+        <building>A</building>
+        <floor>2</floor>
+        <acreage>30.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Nguyễn Quang Tuấn</ownerName>
+        <memberNumber>5</memberNumber>
+        <dichVu>Phí quản lý, Hầm ô tô</dichVu>
+        <moveInDate>02/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH023</apartmentID>
+        <building>A</building>
+        <floor>2</floor>
+        <acreage>30.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Nguyễn Thanh Phong</ownerName>
+        <memberNumber>4</memberNumber>
+        <dichVu>Phí quản lý, Hầm xe máy</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH024</apartmentID>
+        <building>A</building>
+        <floor>2</floor>
+        <acreage>30.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Nguyễn Quang Sáng</ownerName>
+        <memberNumber>4</memberNumber>
+        <dichVu>Phí quản lý, Hầm xe máy, Nước sinh hoạt</dichVu>
+        <moveInDate>02/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH025</apartmentID>
+        <building>A</building>
+        <floor>2</floor>
+        <acreage>20.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Nguyễn Quang Hải</ownerName>
+        <memberNumber>4</memberNumber>
+        <dichVu>Phí quản lý, Hầm xe máy</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH026</apartmentID>
+        <building>A</building>
+        <floor>3</floor>
+        <acreage>20.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Lê Khắc Đạt</ownerName>
+        <memberNumber>4</memberNumber>
+        <dichVu>Phí quản lý, Thang máy, Hầm xe máy</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH027</apartmentID>
+        <building>C</building>
+        <floor>6</floor>
+        <acreage>55.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Lê Quang Dương</ownerName>
+        <memberNumber>5</memberNumber>
+        <dichVu>Phí quản lý, Thang máy, Hầm xe máy, Hầm ô tô, Nước sinh hoạt, Tiền điện, Nước tinh khiết, Thu gom và xử lý rác, Phí bảo trì, Internet cao cấp, Gas, Điều hòa, Bảo vệ</dichVu>
+        <moveInDate>22/02/2024</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH028</apartmentID>
+        <building>A</building>
+        <floor>2</floor>
+        <acreage>40.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Phạm Văn Kiên</ownerName>
+        <memberNumber>4</memberNumber>
+        <dichVu>Phí quản lý, Hầm xe máy</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH029</apartmentID>
+        <building>A</building>
+        <floor>3</floor>
+        <acreage>30.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Lê Văn Khang</ownerName>
+        <memberNumber>4</memberNumber>
+        <dichVu>Phí quản lý, Hầm xe máy</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH030</apartmentID>
+        <building>C</building>
         <floor>1</floor>
         <acreage>50.0</acreage>
         <status>Bỏ trống</status>
-        <ownerName>Nguyễn Anh Dũng</ownerName>
-        <memberNumber>4</memberNumber>
+        <ownerName>Trần Văn Hoàng</ownerName>
+        <memberNumber>3</memberNumber>
         <dichVu></dichVu>
-        <moveInDate>16/06/2021</moveInDate>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH031</apartmentID>
+        <building>F</building>
+        <floor>1</floor>
+        <acreage>50.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Lê Tuấn Khang</ownerName>
+        <memberNumber>5</memberNumber>
+        <dichVu>Phí quản lý, Máy Giặt</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH032</apartmentID>
+        <building>A</building>
+        <floor>5</floor>
+        <acreage>40.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Lê Văn Trọng</ownerName>
+        <memberNumber>5</memberNumber>
+        <dichVu>Phí quản lý</dichVu>
+        <moveInDate>01/06/2025</moveInDate>
+    </apartment>
+    <apartment>
+        <apartmentID>CH033</apartmentID>
+        <building>F</building>
+        <floor>5</floor>
+        <acreage>55.0</acreage>
+        <status>Đã ở</status>
+        <ownerName>Lê Min Ho</ownerName>
+        <memberNumber>5</memberNumber>
+        <dichVu>Phí quản lý, Hầm xe máy</dichVu>
+        <moveInDate>04/05/2025</moveInDate>
     </apartment>
 </apartments>

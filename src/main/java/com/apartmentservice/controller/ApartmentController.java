@@ -36,6 +36,7 @@ public class ApartmentController {
     }
 
     public boolean deleteApartment(String apartmentID) {
+        IDGenerator.getInstance().decreaseApartmentID();
         return manager.delete(apartmentID);
     }
 

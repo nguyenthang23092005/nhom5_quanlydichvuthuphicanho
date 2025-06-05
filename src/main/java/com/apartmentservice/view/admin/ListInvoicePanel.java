@@ -9,9 +9,14 @@ import com.apartmentservice.model.Apartment;
 import com.apartmentservice.model.Invoice;
 import com.apartmentservice.model.Service;
 import com.apartmentservice.utils.IDGenerator;
+import com.apartmentservice.utils.ReloadablePanel;
 import com.apartmentservice.utils.Validator;
+import com.apartmentservice.utils.XMLUtil;
+import com.apartmentservice.wrapper.ApartmentXML;
+import com.apartmentservice.wrapper.ServiceXML;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.io.File;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -31,13 +36,13 @@ import javax.swing.table.DefaultTableCellRenderer;
  *
  * @author Nguyen Van Thang
  */
-public class ListInvoicePanel extends javax.swing.JPanel {
+public class ListInvoicePanel extends javax.swing.JPanel implements ReloadablePanel{
 
     private DefaultTableModel tableModel;
-    private final InvoiceController controller;
-    private final ServiceController serviceController;
-    private final ApartmentController apartmentController;
-    private final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    private InvoiceController controller;
+    private ServiceController serviceController;
+    private ApartmentController apartmentController;
+    private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     private String loggedInUsername;
     private boolean isUserSelectingCombo = true;
     public ListInvoicePanel(String username) {
@@ -142,11 +147,20 @@ public class ListInvoicePanel extends javax.swing.JPanel {
     private void loadCanHo() {
         comboMaCanHo.removeAllItems();
         comboKhachHang.removeAllItems();
+        File apartmentFile = new File("data/apartments.xml");
+        File serviceFile = new File("data/services.xml");
         try {
-            List<Apartment> apartmentList = apartmentController.getAllApartments();
-            List<Service> serviceList = serviceController.getAllServices();
+            ApartmentXML apartmentWrapper = XMLUtil.readFromXML(apartmentFile, ApartmentXML.class);
+            List<Apartment> apartmentList = (apartmentWrapper != null) ? apartmentWrapper.getApartment() : null;
+
             if (apartmentList == null || apartmentList.isEmpty()) {
-                throw new NullPointerException("Không tìm thấy dữ liệu căn hộ (file rỗng hoặc lỗi định dạng).");
+                throw new NullPointerException("Danh sách apartment null - có thể file rỗng hoặc sai format.");
+            }
+            ServiceXML serviceWrapper = XMLUtil.readFromXML(serviceFile, ServiceXML.class);
+            List<Service> serviceList = (serviceWrapper != null) ? serviceWrapper.getServices() : null;
+
+            if (serviceList == null || serviceList.isEmpty()) {
+                throw new NullPointerException("Danh sách service null - có thể file rỗng hoặc sai format.");
             }
             // Thêm dữ liệu vào ComboBox
             for (Apartment a : apartmentList) {
@@ -907,6 +921,7 @@ public class ListInvoicePanel extends javax.swing.JPanel {
             if (result) {
                 loadTable();
                 clearForm();
+                IDGenerator.getInstance().decreaseInvoiceID();
                 JOptionPane.showMessageDialog(this, "Đã xóa hóa đơn " + selectedInvoiceID + " thành công!");
             } else {
                 JOptionPane.showMessageDialog(this, "Xóa hóa đơn thất bại. Vui lòng thử lại.", "Thông báo", JOptionPane.WARNING_MESSAGE);
@@ -1195,4 +1210,66 @@ public class ListInvoicePanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtThuNgan;
     private javax.swing.JTextField txtTongThanhToan;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void reload() {
+        tableModel = (DefaultTableModel) DanhSachHoaDonThanhToan.getModel();
+        try {
+            loadCanHo();
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Lỗi khi load dữ liệu căn hộ:\n" + e.getMessage());
+        }
+        // CheckBox chỉ chọn 1 trạng thái thanh toán
+        checkDaThanhToan.addActionListener(e -> checkChuaThanhToan.setSelected(!checkDaThanhToan.isSelected()));
+        checkChuaThanhToan.addActionListener(e -> checkDaThanhToan.setSelected(!checkChuaThanhToan.isSelected()));
+        DanhSachHoaDonThanhToan.getSelectionModel().addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                int selectedRow = DanhSachHoaDonThanhToan.getSelectedRow();
+                if (selectedRow >= 0) {
+                    isUserSelectingCombo = false; // Tạm tắt sự kiện combo khi set dữ liệu
+                    String invoiceID = (String) DanhSachHoaDonThanhToan.getValueAt(selectedRow, 1);
+                    String apartmentID = (String) DanhSachHoaDonThanhToan.getValueAt(selectedRow, 2);
+                    String customerName = (String) DanhSachHoaDonThanhToan.getValueAt(selectedRow, 3);
+                    String cashierName = (String) DanhSachHoaDonThanhToan.getValueAt(selectedRow, 4);
+                    String invoiceDateStr = (String) DanhSachHoaDonThanhToan.getValueAt(selectedRow, 5);
+                    String totalAmount = (String) DanhSachHoaDonThanhToan.getValueAt(selectedRow, 6);
+                    String status = (String) DanhSachHoaDonThanhToan.getValueAt(selectedRow, 7);
+
+                    comboMaCanHo.setSelectedItem(apartmentID);
+                    comboKhachHang.setSelectedItem(customerName);
+                    txtThuNgan.setText(cashierName);
+                    txtTongThanhToan.setText(totalAmount);
+                    try {
+                        if (invoiceDateStr != null && !invoiceDateStr.trim().isEmpty()) {
+                            Date date = sdf.parse(invoiceDateStr);
+                            dateNgayThanhToan.setDate(date);
+                        } else {
+                            dateNgayThanhToan.setDate(null);
+                        }
+                    } catch (Exception ex) {
+                        dateNgayThanhToan.setDate(null);
+                    }
+                    if ("Đã thanh toán".equalsIgnoreCase(status)) {
+                        checkDaThanhToan.setSelected(true);
+                        checkChuaThanhToan.setSelected(false);
+                    } else if ("Chưa thanh toán".equalsIgnoreCase(status)) {
+                        checkDaThanhToan.setSelected(false);
+                        checkChuaThanhToan.setSelected(true);
+                    } else {
+                        checkDaThanhToan.setSelected(false);
+                        checkChuaThanhToan.setSelected(false);
+                    }
+                    isUserSelectingCombo = true; // Bật lại sự kiện combo
+                }
+            }
+        });
+        loadTable();
+        // Set căn lề trái cho tất cả cột
+        DefaultTableCellRenderer leftRenderer = new DefaultTableCellRenderer();
+        leftRenderer.setHorizontalAlignment(SwingConstants.LEFT);
+        for (int i = 0; i < DanhSachHoaDonThanhToan.getColumnCount(); i++) {
+            DanhSachHoaDonThanhToan.getColumnModel().getColumn(i).setCellRenderer(leftRenderer);
+        }
+    }
 }

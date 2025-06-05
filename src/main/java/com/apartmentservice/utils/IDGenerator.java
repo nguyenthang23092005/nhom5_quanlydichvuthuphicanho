@@ -42,9 +42,21 @@ public class IDGenerator implements Serializable {
         save();
         return String.format("DV%03d", serviceCounter);
     }
+    
+    public String decreaseServiceID() {
+        serviceCounter--;
+        save();
+        return String.format("DV%03d", serviceCounter);
+    }
 
     public String generateInvoiceID() {
         invoiceCounter++;
+        save();
+        return String.format("HD%03d", invoiceCounter);
+    }
+    
+    public String decreaseInvoiceID() {
+        invoiceCounter--;
         save();
         return String.format("HD%03d", invoiceCounter);
     }
@@ -54,9 +66,21 @@ public class IDGenerator implements Serializable {
         save();
         return String.format("CH%03d", apartmentCounter);
     }
+    
+    public String decreaseApartmentID() {
+        apartmentCounter--;
+        save();
+        return String.format("CH%03d", apartmentCounter);
+    }
 
     public String generateAccountID() {
         accountCounter++;
+        save();
+        return String.format("AC%03d", accountCounter);
+    }
+    
+    public String decreaseAccountID() {
+        accountCounter--;
         save();
         return String.format("AC%03d", accountCounter);
     }

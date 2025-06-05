@@ -7,6 +7,7 @@ import com.apartmentservice.controller.ApartmentController;
 import com.apartmentservice.model.Apartment;
 import com.apartmentservice.model.BuildingSummary;
 import com.apartmentservice.model.Service;
+import com.apartmentservice.utils.ReloadablePanel;
 import com.apartmentservice.utils.Validator;
 import com.apartmentservice.utils.XMLUtil;
 import com.apartmentservice.wrapper.BuildingXML;
@@ -24,7 +25,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
 
-public class ApartmentPanel extends javax.swing.JPanel {
+public class ApartmentPanel extends javax.swing.JPanel implements ReloadablePanel{
     private DefaultTableModel tableModel;
     private ApartmentController controller;
     private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -122,7 +123,7 @@ public class ApartmentPanel extends javax.swing.JPanel {
             comboTang.addActionListener(e -> {
                 if (comboToa.getSelectedItem() == null) {
                     JOptionPane.showMessageDialog(this, "Vui lòng chọn Tòa trước khi chọn Tầng!", "Cảnh báo", JOptionPane.WARNING_MESSAGE);
-                    comboTang.setSelectedItem(null); // reset lại lựa chọn
+                    comboTang.setSelectedItem(null); // reset lại lựa chọn;
                 }
             });
 
@@ -1055,4 +1056,37 @@ public class ApartmentPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtSoNguoi;
     private javax.swing.JTextField usernameTextField;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void reload() {
+        setLoggedInUsername(loggedInUsername);
+        tableModel = (DefaultTableModel) DanhSachCanHo.getModel();
+        // Cho phép chọn nhiều dịch vụ
+        listDichVu.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        DanhSachCanHo.getSelectionModel().addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                int selectedRow = DanhSachCanHo.getSelectedRow();
+                if (selectedRow >= 0) {
+                    showApartmentDetails(selectedRow);
+                }
+            }
+        });
+        //loadComboToaTang();
+        loadServiceList();
+
+        checkDaO.addActionListener(e -> {
+            if (checkDaO.isSelected()) checkBoTrong.setSelected(false);
+        });
+        checkBoTrong.addActionListener(e -> {
+            if (checkBoTrong.isSelected()) checkDaO.setSelected(false);
+        });
+
+        DefaultTableCellRenderer leftRenderer = new DefaultTableCellRenderer();
+        leftRenderer.setHorizontalAlignment(SwingConstants.LEFT);
+        for (int i = 0; i < DanhSachCanHo.getColumnCount(); i++) {
+            DanhSachCanHo.getColumnModel().getColumn(i).setCellRenderer(leftRenderer);
+        }
+
+        loadTable();
+    }
 }

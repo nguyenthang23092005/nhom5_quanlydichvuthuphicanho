@@ -93,9 +93,16 @@
     </service>
     <service>
         <serviceID>DV014</serviceID>
-        <serviceName>Bảo vệ</serviceName>
+        <serviceName>Bảo Vệ</serviceName>
         <unitPrice>100000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Thuê bảo vệ an ninh</note>
+        <note>An ninh</note>
+    </service>
+    <service>
+        <serviceID>DV015</serviceID>
+        <serviceName>Máy Giặt</serviceName>
+        <unitPrice>200000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Giặt</note>
     </service>
 </services>
