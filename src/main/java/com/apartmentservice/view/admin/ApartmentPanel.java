@@ -1092,6 +1092,7 @@ public class ApartmentPanel extends javax.swing.JPanel implements ReloadablePane
     @Override
     public void reload() {
         setLoggedInUsername(loggedInUsername);
+        controller = new ApartmentController();
         tableModel = (DefaultTableModel) DanhSachCanHo.getModel();
         // Cho phép chọn nhiều dịch vụ
         listDichVu.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);

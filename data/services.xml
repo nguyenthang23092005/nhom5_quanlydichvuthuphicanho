@@ -9,7 +9,7 @@
     </service>
     <service>
         <serviceID>DV002</serviceID>
-        <serviceName>Thang máy</serviceName>
+        <serviceName>Thang</serviceName>
         <unitPrice>80000.0</unitPrice>
         <unit>Tháng</unit>
         <note>Thang máy trong chung cư</note>

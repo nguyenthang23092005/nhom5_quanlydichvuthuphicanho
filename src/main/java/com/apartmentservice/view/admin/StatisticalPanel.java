@@ -474,6 +474,7 @@ public class StatisticalPanel extends javax.swing.JPanel implements ReloadablePa
 
     @Override
     public void reload() {
+        controller = new DashboardController();
         // Khởi tạo và cấu hình biểu đồ (chartPanel là vùng vẽ biểu đồ chính)
         chartPanel = new JPanel();
         chartPanel.setPreferredSize(new Dimension(800, 400));
