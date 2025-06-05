@@ -2,107 +2,100 @@
 <services>
     <service>
         <serviceID>DV001</serviceID>
-        <serviceName>Quản Lý</serviceName>
-        <unitPrice>150000.0</unitPrice>
+        <serviceName>Quản lý</serviceName>
+        <unitPrice>200000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Quản lý chung cư</note>
+        <note>Quản lý tòa nhà</note>
     </service>
     <service>
         <serviceID>DV002</serviceID>
-        <serviceName>Thang</serviceName>
-        <unitPrice>80000.0</unitPrice>
+        <serviceName>Thang máy</serviceName>
+        <unitPrice>150000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Thang máy trong chung cư</note>
+        <note>Thang máy</note>
     </service>
     <service>
         <serviceID>DV003</serviceID>
-        <serviceName>Trông xe</serviceName>
+        <serviceName>Hầm xe máy</serviceName>
         <unitPrice>150000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Gửi xe máy trong hầm</note>
+        <note>Coi xe máy</note>
     </service>
     <service>
         <serviceID>DV004</serviceID>
-        <serviceName>ô tô</serviceName>
+        <serviceName>Hầm ô tô</serviceName>
         <unitPrice>1200000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Gửi xe ô tô trong hầm</note>
+        <note>Hầm để ô tô</note>
     </service>
     <service>
         <serviceID>DV005</serviceID>
         <serviceName>Nước sinh hoạt</serviceName>
         <unitPrice>200000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Nước sinh hoạt cho công dân</note>
+        <note>Nước dùng cho sinh hoạt</note>
     </service>
     <service>
         <serviceID>DV006</serviceID>
-        <serviceName>Tiền điện</serviceName>
-        <unitPrice>700000.0</unitPrice>
+        <serviceName>Nước tinh khiết</serviceName>
+        <unitPrice>300000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Điện dân dụng cho gia đình</note>
+        <note>Nước uống (không bắt buộc)</note>
     </service>
     <service>
         <serviceID>DV007</serviceID>
-        <serviceName>Nước tinh khiết</serviceName>
-        <unitPrice>100000.0</unitPrice>
+        <serviceName>Tiền điện</serviceName>
+        <unitPrice>500000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Nước uống cho hộ (Tùy chọn)</note>
+        <note>Điện sinh hoạt</note>
     </service>
     <service>
         <serviceID>DV008</serviceID>
-        <serviceName>Thu gom và xử lý rác</serviceName>
+        <serviceName>Xử lý rác</serviceName>
         <unitPrice>100000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Thu gom và xử lý rác thải sinh hoạt</note>
+        <note>Thu và xử lý rác thải</note>
     </service>
     <service>
         <serviceID>DV009</serviceID>
         <serviceName>Phí bảo trì</serviceName>
-        <unitPrice>400000.0</unitPrice>
+        <unitPrice>120000.0</unitPrice>
         <unit>Tháng</unit>
         <note>Bảo trì cho chung cư</note>
     </service>
     <service>
         <serviceID>DV010</serviceID>
-        <serviceName>Internet cao cấp</serviceName>
-        <unitPrice>450000.0</unitPrice>
+        <serviceName>Internet</serviceName>
+        <unitPrice>200000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Internet tốc độ cao</note>
+        <note>Internet cho gia đình</note>
     </service>
     <service>
         <serviceID>DV011</serviceID>
-        <serviceName>Internet bình dân</serviceName>
-        <unitPrice>170000.0</unitPrice>
+        <serviceName>Truyền hình cáp</serviceName>
+        <unitPrice>50000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Internet tốc độ bình thường</note>
+        <note>Truyền hình nhà đài</note>
     </service>
     <service>
         <serviceID>DV012</serviceID>
         <serviceName>Gas</serviceName>
-        <unitPrice>50000.0</unitPrice>
+        <unitPrice>70000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Tiền gas trong gia đình</note>
+        <note>Khí gas dùng bếp</note>
     </service>
     <service>
         <serviceID>DV013</serviceID>
         <serviceName>Điều hòa</serviceName>
-        <unitPrice>200000.0</unitPrice>
+        <unitPrice>70000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Điều hòa trong gia đình</note>
+        <note>Điều hòa gia đình</note>
     </service>
     <service>
         <serviceID>DV014</serviceID>
-        <serviceName>Bảo Vệ</serviceName>
-        <unitPrice>100000.0</unitPrice>
-        <unit>Tháng</unit>
-        <note>An ninh</note>
-    </service>
-    <service>
-        <serviceID>DV015</serviceID>
-        <serviceName>Máy Giặt</serviceName>
+        <serviceName>Bảo vệ</serviceName>
         <unitPrice>200000.0</unitPrice>
         <unit>Tháng</unit>
-        <note>Giặt</note>
+        <note>Anh ninh tòa nhà</note>
     </service>
 </services>
