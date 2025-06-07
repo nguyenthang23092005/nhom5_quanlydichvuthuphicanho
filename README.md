@@ -23,7 +23,7 @@ https://github.com/nguyenthang23092005/nhom5_quanlydichvuthuphicanho.git
 ### Giao diện Đăng Nhập
 ![Đây là giao diện Đăng Nhập](./img/dangnhap.png)
 ### Giao diện Đăng Kí
-![Đây là giao diện Đăng Kí](./img/dangki.png)
+![Đây là giao diện Đăng Kí](./img/dangky.png)
 ### Giao diện Quản Lý Căn Hộ
 ![Đây là giao diện Quản Lý Căn Hộ](./img/canho.png)
 ### Giao diện Quản Lý Hóa Đơn
