@@ -9,7 +9,7 @@ Thành viên nhóm bao gồm:
 1. Tải source code về tại:
 https://github.com/nguyenthang23092005/nhom5_quanlydichvuthuphicanho.git
 2. Giải nén và mở source code bằng Apache Netbeans.
-3. Chạy source code bằng cách chọn vào file `Main.java` + `Shift + F6`. Hoặc sử dụng ứng dụng đã được đóng gói `./target/ResiTrack.jar`.
+3. Chạy source code bằng cách chọn vào file `Main.java` + `Shift + F6`. Hoặc sử dụng ứng dụng đã được đóng gói `./target/Project_Group_5-1.0-SNAPSHOT-jar-with-dependencies.jar`.
 ## Mô tả phần mềm
 - Phần mềm quản lý dịch vụ thu phí căn hộ là 1 ứng dụng giúp quản lý thu phí các dịch vụ thiết yếu của các căn hộ trong chung cư một cách dễ dàng, hợp lý và không mất quá nhiều thời gian.
 - Phần mềm quản lý thông tin bao gồm:
