@@ -23,7 +23,7 @@ https://github.com/nguyenthang23092005/nhom5_quanlydichvuthuphicanho.git
 - Thêm: Dùng để thêm đối tượng mới cần quản lý.
 - Cập nhật: Dùng để cập nhật các đối tượng khi muốn thay đổi thông tin nào đó của đối tượng.
 - Xóa: Dùng để xóa các đối tượng khi không còn quản lý nữa.
-- Sắp xếp: Dụng để sắp xếp thông tin của các dối tượng.
+- Sắp xếp: Dùng để sắp xếp thông tin của các dối tượng.
 - Tìm kiếm: Dùng để tìm kiếm đối tượng muốn tra cứu.
 - Làm mới: Dùng để hiển thị lại toàn bộ thông tin các đối tượng quản lý.
 # Chạy chương trình
