@@ -55,4 +55,4 @@ https://github.com/nguyenthang23092005/nhom5_quanlydichvuthuphicanho.git
 ![Đây là giao diện Hình Thức Thanh Toán](./img/thanhtoan.png)
 ### Giao diện Thống Kê
 ![Đây là giao diện Thống Kê](./img/thongke.png)
-# The End
+# Kết thúc
