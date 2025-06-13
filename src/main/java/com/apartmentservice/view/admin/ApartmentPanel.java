@@ -898,7 +898,7 @@ public class ApartmentPanel extends javax.swing.JPanel implements ReloadablePane
             JOptionPane.showMessageDialog(this, "Không tìm thấy căn hộ có mã: " + selectedID, "Lỗi", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        Apartment a = found.get(0); // lấy căn hộ đầu tiên (vì mã căn hộ thường là duy nhất)
+        Apartment a = found.get(0);
         // Xác nhận xóa
         int confirm = JOptionPane.showConfirmDialog(
             this,
