@@ -721,6 +721,10 @@ public class ResidentPanel extends javax.swing.JPanel implements ReloadablePanel
             }
         }
         java.util.Date birthdayUtil = dateNgaySinh.getDate();
+        if (birthdayUtil.after(new java.util.Date())) {
+            JOptionPane.showMessageDialog(this, "Ngày sinh không được lớn hơn ngày hiện tại.");
+            return;
+        }
         String phone = txtSĐT.getText().trim();
         String birthPlace = txtQueQuan.getText().trim();
         String idFamily = txtSoHoKhau.getText().trim();
@@ -861,6 +865,10 @@ public class ResidentPanel extends javax.swing.JPanel implements ReloadablePanel
         // Các thông tin còn lại
         String cccd = txtCCCD.getText().trim();
         java.util.Date birthdayUtil = dateNgaySinh.getDate();
+        if (birthdayUtil.after(new java.util.Date())) {
+            JOptionPane.showMessageDialog(this, "Ngày sinh không được lớn hơn ngày hiện tại.");
+            return;
+        }
         String phone = txtSĐT.getText().trim();
         String birthPlace = txtQueQuan.getText().trim();
         String idFamily = txtSoHoKhau.getText().trim();
