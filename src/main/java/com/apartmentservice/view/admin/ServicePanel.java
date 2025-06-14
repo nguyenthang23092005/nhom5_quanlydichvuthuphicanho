@@ -1,8 +1,6 @@
 package com.apartmentservice.view.admin;
 
-import com.apartmentservice.controller.ApartmentController;
 import com.apartmentservice.controller.ServiceController;
-import com.apartmentservice.model.Apartment;
 import com.apartmentservice.model.Service;
 import com.apartmentservice.utils.Validator;
 import java.util.ArrayList;
@@ -18,7 +16,6 @@ import javax.swing.table.DefaultTableModel;
 public class ServicePanel extends javax.swing.JPanel {
 
     private ServiceController controller;
-    private ApartmentController apartmentController;
     private DefaultTableModel tableModel;
     private String loggedInUsername;
     public ServicePanel(String username) {

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<services>
+    <service>
+        <serviceID>DV001</serviceID>
+        <serviceName>Quản lý</serviceName>
+        <unitPrice>200000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Quản lý tòa nhà</note>
+    </service>
+    <service>
+        <serviceID>DV002</serviceID>
+        <serviceName>Thang máy</serviceName>
+        <unitPrice>150000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Thang máy</note>
+    </service>
+    <service>
+        <serviceID>DV003</serviceID>
+        <serviceName>Hầm xe máy</serviceName>
+        <unitPrice>150000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Coi xe máy</note>
+    </service>
+    <service>
+        <serviceID>DV004</serviceID>
+        <serviceName>Hầm ô tô</serviceName>
+        <unitPrice>1200000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Hầm để ô tô</note>
+    </service>
+    <service>
+        <serviceID>DV005</serviceID>
+        <serviceName>Nước sinh hoạt</serviceName>
+        <unitPrice>200000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Nước dùng cho sinh hoạt</note>
+    </service>
+    <service>
+        <serviceID>DV006</serviceID>
+        <serviceName>Nước tinh khiết</serviceName>
+        <unitPrice>300000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Nước uống (không bắt buộc)</note>
+    </service>
+    <service>
+        <serviceID>DV007</serviceID>
+        <serviceName>Tiền điện</serviceName>
+        <unitPrice>500000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Điện sinh hoạt</note>
+    </service>
+    <service>
+        <serviceID>DV008</serviceID>
+        <serviceName>Xử lý rác</serviceName>
+        <unitPrice>100000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Thu và xử lý rác thải</note>
+    </service>
+    <service>
+        <serviceID>DV009</serviceID>
+        <serviceName>Phí bảo trì</serviceName>
+        <unitPrice>120000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Bảo trì cho chung cư</note>
+    </service>
+    <service>
+        <serviceID>DV010</serviceID>
+        <serviceName>Internet</serviceName>
+        <unitPrice>200000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Internet cho gia đình</note>
+    </service>
+    <service>
+        <serviceID>DV011</serviceID>
+        <serviceName>Truyền hình cáp</serviceName>
+        <unitPrice>50000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Truyền hình nhà đài</note>
+    </service>
+    <service>
+        <serviceID>DV012</serviceID>
+        <serviceName>Gas</serviceName>
+        <unitPrice>70000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Khí gas dùng bếp</note>
+    </service>
+    <service>
+        <serviceID>DV013</serviceID>
+        <serviceName>Điều hòa</serviceName>
+        <unitPrice>70000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Điều hòa gia đình</note>
+    </service>
+    <service>
+        <serviceID>DV014</serviceID>
+        <serviceName>Bảo vệ</serviceName>
+        <unitPrice>200000.0</unitPrice>
+        <unit>Tháng</unit>
+        <note>Anh ninh tòa nhà</note>
+    </service>
+</services>
