@@ -135,7 +135,31 @@
                 </executions>
             </plugin>
 
-            <!-- Copy toàn bộ folder data/ vào target/data -->
+<!--             Copy toàn bộ folder data/ vào target/data 
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-data-folder</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/data</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>data</directory>
+                                    <includes>
+                                        <include>**/*.*</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.3.1</version>
@@ -169,13 +193,13 @@
                     <include>**/*</include>
                 </includes>
             </resource>
-            <resource>
+<!--            <resource>
                 <directory>data</directory>
                 <targetPath>data</targetPath>
                 <includes>
                     <include>**/*</include>
                 </includes>
-            </resource>
+            </resource>-->
         </resources>
     </build>
 </project>

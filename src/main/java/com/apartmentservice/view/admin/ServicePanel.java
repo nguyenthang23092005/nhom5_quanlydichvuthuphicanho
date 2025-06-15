@@ -521,35 +521,6 @@ public class ServicePanel extends javax.swing.JPanel {
             }
         }
 
-//        // Cập nhật các dịch vụ trong danh sách các căn hộ
-//        List<Apartment> apartments = apartmentController.getAllApartments(); // Lấy tất cả các căn hộ
-//        for (Apartment apartment : apartments) {
-//            String currentServices = apartment.getDichVu();
-//            if (currentServices != null && currentServices.contains(existing.getServiceName())) {
-//                // Remove the old service name from the list of services in the apartment
-//                String updatedServices = currentServices.replace(existing.getServiceName(), "").trim();
-//
-//                // If the updated services string is empty, clear the service list for that apartment
-//                if (updatedServices.isEmpty()) {
-//                    apartment.setDichVu(null);  // Or any default value that represents no services
-//                } else {
-//                    apartment.setDichVu(updatedServices); // Update with remaining services
-//                }
-//
-//                // Cập nhật căn hộ với dịch vụ mới (after removal of the old service)
-//                apartmentController.updateApartment(
-//                    apartment.getApartmentID(),
-//                    apartment.getBuilding(),
-//                    apartment.getFloor(),
-//                    apartment.getAcreage(),
-//                    apartment.getStatus(),
-//                    apartment.getOwnerName(),
-//                    apartment.getMemberNumber(),
-//                    apartment.getDichVu(), // Updated services
-//                    apartment.getMoveInDate()
-//                );
-//            }
-//        }
         // Cập nhật dịch vụ
         controller.updateService(id, name, price, unit, note);
         JOptionPane.showMessageDialog(this, "Cập nhật thành công cho dịch vụ có mã: " + id);
