@@ -12,7 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>23</maven.compiler.release>
-        <exec.mainClass>com.mycompany.project_group_5.Project_Group_5</exec.mainClass>
+        <exec.mainClass>com.apartmentservice.main.Main</exec.mainClass>
     </properties>
 
     <dependencies>
@@ -74,7 +74,46 @@
     </dependencies>
 
     <build>
+        <resources>
+            <!-- Đóng gói tất cả resource trong src/main/resources -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+            <!-- Đóng gói cả thư mục data ngoài cùng vào JAR, bên trong JAR sẽ có thư mục data -->
+            <resource>
+                <directory>data</directory>
+                <targetPath>data</targetPath>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
+
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <transformers>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <mainClass>com.mycompany.project_group_5.Project_Group_5</mainClass>
+                        </transformer>
+                    </transformers>
+                </configuration>
+            </plugin>
+
             <!-- Copy all dependencies to target/libs -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -93,7 +132,7 @@
                 </executions>
             </plugin>
 
-<!--             JAR plugin (chạy với thư viện ngoài ở libs/) 
+            <!-- JAR plugin (chạy với thư viện ngoài ở libs/) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -103,11 +142,11 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>libs/</classpathPrefix>
-                            <mainClass>com.mycompany.project_group_5.Project_Group_5</mainClass>
+                            <mainClass>com.apartmentservice.main.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
-            </plugin>-->
+            </plugin>
 
             <!-- Assembly plugin: tạo một file jar-with-dependencies duy nhất -->
             <plugin>
@@ -135,31 +174,7 @@
                 </executions>
             </plugin>
 
-<!--             Copy toàn bộ folder data/ vào target/data 
-            <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.3.1</version>
-                <executions>
-                    <execution>
-                        <id>copy-data-folder</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.directory}/data</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>data</directory>
-                                    <includes>
-                                        <include>**/*.*</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>-->
+            <!-- Copy thư mục data/ bên ngoài project ra target/data -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.3.1</version>
@@ -184,22 +199,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*</include>
-                </includes>
-            </resource>
-<!--            <resource>
-                <directory>data</directory>
-                <targetPath>data</targetPath>
-                <includes>
-                    <include>**/*</include>
-                </includes>
-            </resource>-->
-        </resources>
     </build>
 </project>
