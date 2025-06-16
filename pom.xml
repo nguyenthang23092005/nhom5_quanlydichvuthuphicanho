@@ -93,7 +93,7 @@
                 </executions>
             </plugin>
 
-            <!-- JAR plugin (chạy với thư viện ngoài ở libs/) -->
+<!--             JAR plugin (chạy với thư viện ngoài ở libs/) 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -107,7 +107,7 @@
                         </manifest>
                     </archive>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <!-- Assembly plugin: tạo một file jar-with-dependencies duy nhất -->
             <plugin>
